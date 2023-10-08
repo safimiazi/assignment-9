@@ -1,17 +1,42 @@
-import { NavLink,Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./Navbar.css"
 import logo from "../../assets/Besty-Logo.png"
+import { useContext } from "react";
+import { UserContext } from "../AuthProvider/AuthProvider";
 
 const Navbar = () => {
+    const { logoutUser, user } = useContext(UserContext)
+
+    const handleLogout = () => {
+        logoutUser()
+            .then(() => {
+                console.log("user successfully logout")
+            })
+            .catch(error => {
+                console.log(error.message)
+            })
+    }
 
     const navLink = <>
+
+
+
         <NavLink to="/">Home</NavLink>
         <NavLink to="/about">About</NavLink>
         <NavLink to="/gallery">Gallery</NavLink>
+        <NavLink to="/Event">Event</NavLink>
+      {
+        user && <>
+        <NavLink to="/profile">Profile</NavLink>
+        <NavLink to="/Dashboard">Dashboard</NavLink>
+
+        </>
+      }
+        
     </>
     return (
-    
-            <div className="navbar bg-gray-700 md:px-32">
+
+        <div className="navbar bg-gray-700 md:px-32">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -33,10 +58,15 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link to="/login" className="btn bg-orange-500 border-0 rounded-3xl text-white px-10">Login</Link>
+                {user ?
+                <Link onClick={handleLogout} to="/" className="btn bg-orange-500  hover:bg-orange-600 border-0 rounded-3xl text-white px-10">Logout</Link>         
+                    :
+                    <Link to="/login" className="btn bg-orange-500  hover:bg-orange-600 border-0 rounded-3xl text-white px-10">Login</Link>
+
+                }
             </div>
         </div>
-     
+
     );
 };
 

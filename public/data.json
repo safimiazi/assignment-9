@@ -2,14 +2,16 @@
     {
         "id": 1,
         "service_name": "Venue & Management",
+        "detail_title": "Mastering the Art of Venue & Management: Creating Unforgettable Experiences",
         "service_description": "Our Venue & Management service offers top-notch event spaces and expert event management solutions. Whether you're planning a corporate conference, wedding, or any special event, we provide the perfect venue and seamless management to ensure your event is a success. Our dedicated team takes care of every detail, from venue selection and setup to catering, audiovisual equipment, and event coordination.",
-      "service_img": "https://i.ibb.co/T0Shn72/1.jpg",
-      "icon": "https://i.ibb.co/kJvvyhk/icon1.png",
-      "price": "123$"
+        "service_img": "https://i.ibb.co/T0Shn72/1.jpg",
+        "icon": "https://i.ibb.co/kJvvyhk/icon1.png",
+        "price": "123$"
     },
     {
         "id": 2,
         "service_name": "Catering & Food Services",
+        "detail_title": "Serving Excellence: A Culinary Journey Through Catering & Food Services",
         "service_description": "Our Catering & Food Services are designed to elevate your events with delightful culinary experiences. Whether you're planning a corporate gathering, wedding, birthday party, or any special occasion, our expert chefs and catering staff are dedicated to providing exceptional service and mouthwatering dishes. From elegant plated dinners to diverse buffet options, our menu is crafted to cater to various tastes and dietary preferences. We source fresh, high-quality ingredients to create delectable appetizers, main courses, desserts, and beverages. Our professional team ensures seamless coordination, from menu planning to on-time delivery and setup. With our Catering & Food Services, you can relax and enjoy your event while we take care of the culinary delights, leaving your guests impressed and satisfied.",
         "service_img": "https://i.ibb.co/R9cKDwF/2.jpg",
         "icon": "https://i.ibb.co/NSHmBBQ/icon2.png",
@@ -18,14 +20,16 @@
     {
         "id": 3,
         "service_name": "Entertainment & Activities",
+        "detail_title": "Lights, Camera, Action: The Ultimate Guide to Entertainment and Activities",
         "service_description": "Our Entertainment & Activities service is designed to provide fun and engaging experiences for individuals, families, and groups of all sizes. Whether you're looking for leisurely activities to unwind or exciting entertainment options to add some thrill to your day, we've got you covered.",
         "service_img": "https://i.ibb.co/6sCPxCy/3.jpg",
         "icon": "https://i.ibb.co/jzGMvmY/icon3.png",
         "price": "111$"
-   },
+    },
     {
         "id": 4,
         "service_name": "Event Design & Decor",
+        "detail_title": "Crafting Unforgettable Moments: Mastering the Art of Event Design & Decor",
         "service_description": "Our Event Design & Decor service is dedicated to making your special occasions truly memorable and visually stunning. We specialize in creating unique and personalized designs for a wide range of events, including weddings, corporate gatherings, parties, and more. With a keen eye for detail and creativity, our team of experienced designers will work closely with you to understand your vision and bring it to life.\n\nWe offer a comprehensive range of decor elements, including floral arrangements, lighting setups, table settings, stage backdrops, and thematic props. Whether you prefer a classic and elegant ambiance or a modern and trendy atmosphere, our experts will curate the perfect decor that reflects your style and theme.\n\nFrom intimate gatherings to grand celebrations, our Event Design & Decor service ensures that every aspect of your event space is transformed into a visually captivating and harmonious environment. We pay meticulous attention to color schemes, textures, and spatial arrangements to create a cohesive and enchanting atmosphere that leaves a lasting impression on your guests.\n\nLet us take care of the aesthetics and ambiance, allowing you to focus on enjoying your event to the fullest. With our Event Design & Decor service, you can expect exquisite designs, top-notch craftsmanship, and a seamless execution that exceeds your expectations.",
         "service_img": "https://i.ibb.co/T0Shn72/1.jpg",
         "icon": "https://i.ibb.co/f1pn882/icon4.png",
@@ -34,6 +38,7 @@
     {
         "id": 5,
         "service_name": "Audiovisual & Tech Support",
+        "detail_title": "Professional Audio & Visual Technical Support.",
         "service_description": "Our Audiovisual & Tech Support service is designed to ensure seamless operations during your presentations, meetings, and events. Whether you need assistance with setting up audio and visual equipment, troubleshooting technical issues, or managing multimedia presentations, our expert technicians have you covered.",
         "service_img": "https://i.ibb.co/yqKkRCf/5.jpg",
         "icon": "https://i.ibb.co/4g7xrkC/icon5.png",
@@ -42,10 +47,10 @@
     {
         "id": 6,
         "service_name": "Transportation & Logistics",
+        "detail_title": "The Wheels of Progress: A Deep Dive into Transportation and Logistics Trends",
         "service_description": "we understand the importance of reliable transportation and logistics in today's fast-paced business world. Our comprehensive transportation and logistics services cover everything from freight forwarding and customs clearance to warehousing and distribution. We leverage cutting-edge technology to optimize routes, track shipments in real-time, and provide you with complete visibility into your supply chain.\n\nWith our extensive fleet of vehicles, experienced drivers, and state-of-the-art logistics facilities, we can handle any cargo, whether it's small packages or oversized freight. We adhere to strict safety standards and industry best practices to ensure the secure transportation of your goods.\n\nOur dedicated team of logistics professionals is available 24/7 to assist you with any inquiries and provide updates on your shipments. We believe in building long-term partnerships with our clients, and our commitment to excellence is reflected in every service we offer.\n\nKey Features of Our Transportation & Logistics Service:\n\n- **Efficient Freight Management:** We optimize freight routes and use the best modes of transport to minimize costs and delivery times.\n\n- **Customs Clearance:** Our experts handle all customs documentation and clearance processes, ensuring smooth cross-border shipments.\n\n- **Warehousing and Distribution:** We offer secure warehousing facilities and efficient distribution services to streamline your supply chain.\n\n- **Real-time Shipment Tracking:** You can track your shipments in real-time through our user-friendly online portal or mobile app.\n\n- **Dedicated Customer Support:** Our customer support team is available round the clock to assist you with any queries and provide timely updates.\n\nWhether you need domestic or international transportation services, trust [Your Company Name] to deliver your goods with precision and reliability. We pride ourselves on our commitment to customer satisfaction and look forward to being your trusted transportation and logistics partner.",
         "service_img": "https://i.ibb.co/jTyRgyM/6.jpg",
         "icon": "https://i.ibb.co/f1pn882/icon4.png",
         "price": "66"
-        
     }
 ]

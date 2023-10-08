@@ -1,19 +1,32 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { UserContext } from "../../Components/AuthProvider/AuthProvider";
 
 const Register = () => {
-    const handleForm = e => {
+
+    const {createUser} = useContext(UserContext)
+
+    const handleRegister = e => {
         e.preventDefault()
         const name = e.target.name.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
         console.log(name, email, password)
+        createUser(email, password)
+        .then(result => {
+            console.log(result.user)
+            
+        })
+        .catch(error => {
+            console.log(error)
+        })
     }
     return (
         <div className="hero min-h-screen">
-            <div className="p-10 bg-orange-500 rounded-xl   hero-content flex-col lg:flex-row-reverse">
+            <div className="md:p-10 bg-orange-500 rounded-xl   hero-content flex-col lg:flex-row-reverse">
 
                 <div className="bg-orange-200 card flex-shrink-0 w-full max-w-sm shadow-2xl">
-                    <form onSubmit={handleForm} className="card-body">
+                    <form onSubmit={handleRegister} className="card-body">
                         <h5 className="text-xl font-medium text-gray-900 dark:text-white">Sign in to our platform</h5>
                         <div className="form-control">
                             <label className="label">
@@ -37,7 +50,7 @@ const Register = () => {
                             </label>
                         </div>
                         <div className="form-control mt-6">
-                            <button className="btn bg-orange-500 hover:bg-orange-600 text-white">Login</button>
+                            <button className="btn bg-orange-500 hover:bg-orange-600 text-white">Register</button>
                         </div>
                         <p>Already register? please <Link className="text text-orange-800 underline" to="/login">Login</Link></p>
                     </form>
