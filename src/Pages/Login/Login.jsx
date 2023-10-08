@@ -6,7 +6,7 @@ import { BsFacebook, BsGithub } from 'react-icons/bs';
 
 
 const Login = () => {
-  const { signInUser } = useContext(UserContext)
+  const { signInUser, signUpUserWithGoogle, signUpWithGithub } = useContext(UserContext)
   const Navigate = useNavigate()
   const handleSignIn = e => {
     e.preventDefault()
@@ -24,6 +24,26 @@ const Login = () => {
       .catch(error => {
         console.log(error.message)
       })
+  }
+
+  const handleSignUpWithGoogle = () => {
+    signUpUserWithGoogle()
+    .then(result => {
+      console.log(result.user);
+    })
+    .catch(error => {
+      console.log(error.message)
+    })
+  }
+
+  const handleSignUpWithGithub = () => {
+    signUpWithGithub()
+    .then(result => {
+      console.log(result.user)
+    })
+    .catch(error => {
+      console.log(error.message)
+    })
   }
   return (
 
@@ -53,9 +73,9 @@ const Login = () => {
               <div className="space-y-2">
                 <p className="text-center">Or Sign Up Using</p>
                 <div className="flex justify-center gap-5">
-                <a href="/"><FcGoogle className="text-2xl"></FcGoogle></a> 
-                <a href=""><BsFacebook className="text-2xl"></BsFacebook></a> 
-                <a href=""><BsGithub className="text-2xl"></BsGithub></a>
+                <button className="bg-white rounded-full " onClick={handleSignUpWithGoogle}><FcGoogle className="text-3xl"></FcGoogle></button> 
+                <button className="text-blue-600 bg-white rounded-full"><BsFacebook className="text-3xl"></BsFacebook></button> 
+                <button onClick={handleSignUpWithGithub} className="text-black bg-white rounded-full"><BsGithub className="text-3xl"></BsGithub></button>
                 </div>
               </div>
             </div>

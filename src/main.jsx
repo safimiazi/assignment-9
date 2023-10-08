@@ -19,11 +19,13 @@ import Event from './Pages/Event/Event.jsx';
 import Dashboard from './Pages/Dashboard/Dashboard.jsx';
 import PrivateRoutes from './Components/PrivateRoutes/PrivateRoutes.jsx';
 import Profile from './Pages/Profile/Profile.jsx';
+import ErrorPage from './Pages/ErrorPage/ErrorPage.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
