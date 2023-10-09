@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import "../style/style.css";
 const ServiceCard = ({ singleData }) => {
-    const { id, service_name, service_description,price, icon } = singleData;
+    const {aos, id, service_name, service_description,price, icon } = singleData;
     
     return (
-<div>
+<div data-aos={aos}>
     
-        <div className=" cardShadow  p-6 text-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div className=" cardShadow   p-6 text-center bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
              <img className="mx-auto" src={icon} alt="" />
             <a href="#">
                 <h5 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">{service_name}</h5>

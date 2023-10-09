@@ -20,6 +20,12 @@ import Dashboard from './Pages/Dashboard/Dashboard.jsx';
 import PrivateRoutes from './Components/PrivateRoutes/PrivateRoutes.jsx';
 import Profile from './Pages/Profile/Profile.jsx';
 import ErrorPage from './Pages/ErrorPage/ErrorPage.jsx';
+import ServicePage from './Pages/ServicePage/ServicePage.jsx';
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init({
+  duration: 1000
+});
 
 const router = createBrowserRouter([
   {
@@ -59,11 +65,17 @@ const router = createBrowserRouter([
       },
       {
         path: "/dashboard",
-        element: <PrivateRoutes><Dashboard></Dashboard></PrivateRoutes>
+        element: <PrivateRoutes><Dashboard></Dashboard></PrivateRoutes>,
+        loader: () => fetch("/public/data.json")
       },
       {
         path: "/profile",
         element: <PrivateRoutes><Profile></Profile></PrivateRoutes>
+      },
+      {
+        path: "/services",
+        element: <ServicePage></ServicePage>,
+        loader: () => fetch("/public/data.json")
       }
     ]
   },
