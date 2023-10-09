@@ -1,8 +1,10 @@
-# React + Vite
+# Event-Management
+- The most important feature of my website is system authentication. Through this system users can register and sign in with Facebook Github and Google, Password. Features that we see on many major websites.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- The second feature is Toast, through which a user can understand his behavior or action.
 
-Currently, two official plugins are available:
+- The third feature of the website is local storage through which a user can complete his booking
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- The fourth feature is the private round through which no one can go to the private page of the website. He can access that private page as soon as he signs in or registers.
+
+- Feature number 5 is Animation Animation can make a website more attractive and attract users to the website.
