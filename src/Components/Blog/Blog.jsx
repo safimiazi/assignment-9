@@ -26,7 +26,7 @@ const Blog = () => {
                                 <p className="mt-4 inline-flex items-center gap-x-1.5 text-orange-500 decoration-2 hover:underline font-medium">
                                     Read more
                                     <svg className="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                        <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                        <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor"strokeWidth="2" strokeLinecap="round" />
                                     </svg>
                                 </p>
                             </div>
@@ -49,7 +49,7 @@ const Blog = () => {
                                 <p className="mt-4 inline-flex items-center gap-x-1.5 text-orange-500 decoration-2 hover:underline font-medium">
                                     Read more
                                     <svg className="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                        <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                        <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor"strokeWidth="2" strokeLinecap="round" />
                                     </svg>
                                 </p>
                             </div>
@@ -71,7 +71,7 @@ const Blog = () => {
                                 <p className="mt-4 inline-flex items-center gap-x-1.5 text-orange-500 decoration-2 hover:underline font-medium">
                                     Read more
                                     <svg className="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                        <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                        <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor"strokeWidth="2" strokeLinecap="round" />
                                     </svg>
                                 </p>
                             </div>
@@ -93,7 +93,7 @@ Our Venue & Management service offers top-notch event spaces and expert event ma
                                 <p className="mt-4 inline-flex items-center gap-x-1.5 text-orange-500 decoration-2 hover:underline font-medium">
                                     Read more
                                     <svg className="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                        <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                        <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor"strokeWidth="2" strokeLinecap="round" />
                                     </svg>
                                 </p>
                             </div>

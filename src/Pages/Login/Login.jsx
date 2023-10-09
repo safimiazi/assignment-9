@@ -1,12 +1,15 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 import { UserContext } from "../../Components/AuthProvider/AuthProvider";
 import { FcGoogle } from 'react-icons/fc';
 import { BsFacebook, BsGithub } from 'react-icons/bs';
+import toast from 'react-hot-toast';
 
 
 const Login = () => {
-  const { signInUser, signUpUserWithGoogle, signUpWithGithub } = useContext(UserContext)
+  const { signInUser, signUpUserWithGoogle, signUpWithGithub, signUpWithFacebook } = useContext(UserContext)
+  const [error, setError] = useState(null)
+  
   const Navigate = useNavigate()
   const handleSignIn = e => {
     e.preventDefault()
@@ -16,13 +19,18 @@ const Login = () => {
     signInUser(email, password)
       .then(result => {
         console.log(result.user)
+        toast.success('Successfully Login!')
+        
         e.target.reset()
         Navigate("/")
 
 
       })
       .catch(error => {
+        setError(error.message)
+        toast.error("Please register first")
         console.log(error.message)
+        
       })
   }
 
@@ -30,8 +38,12 @@ const Login = () => {
     signUpUserWithGoogle()
     .then(result => {
       console.log(result.user);
+      toast.success('Successful!')
+
     })
     .catch(error => {
+      setError(error.message)
+      toast.error("This didn't work.")
       console.log(error.message)
     })
   }
@@ -40,8 +52,27 @@ const Login = () => {
     signUpWithGithub()
     .then(result => {
       console.log(result.user)
+      toast.success('Successful!')
+
     })
     .catch(error => {
+      setError(error.message)
+      toast.error("This didn't work.")
+      console.log(error.message)
+    })
+  }
+
+  const handleSignUpWithFacebook = () => {
+    signUpWithFacebook()
+    .then(result => {
+      console.log(result.user)
+      toast.success('Successful!')
+
+
+    })
+    .catch(error => {
+      setError(error.message)
+      toast.error("This didn't work.")
       console.log(error.message)
     })
   }
@@ -68,13 +99,14 @@ const Login = () => {
                 <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
               </label>
             </div>
+            <p className="text-red-500">{error}</p>
             <div className="form-control mt-6">
               <button className="btn bg-orange-500 hover:bg-orange-600 text-white"><a href="/">Login</a></button>
               <div className="space-y-2">
                 <p className="text-center">Or Sign Up Using</p>
                 <div className="flex justify-center gap-5">
                 <button className="bg-white rounded-full " onClick={handleSignUpWithGoogle}><FcGoogle className="text-3xl"></FcGoogle></button> 
-                <button className="text-blue-600 bg-white rounded-full"><BsFacebook className="text-3xl"></BsFacebook></button> 
+                <button onClick={handleSignUpWithFacebook} className="text-blue-600 bg-white rounded-full"><BsFacebook className="text-3xl"></BsFacebook></button> 
                 <button onClick={handleSignUpWithGithub} className="text-black bg-white rounded-full"><BsGithub className="text-3xl"></BsGithub></button>
                 </div>
               </div>
